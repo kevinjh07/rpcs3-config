@@ -1,0 +1,19 @@
+# Community controller DB bundled/updated by RPCS3 itself — not our config, pure noise to diff.
+config/input_configs/gamecontrollerdb.txt
+
+# 100% machine-specific: absolute ROM paths / random per-install machine ID.
+# Not sanitizable into something generically useful — just don't track it.
+config/games.yml
+config/uuid
+config/vfs.yml
+
+# Empty today, but this is where RPCS3 remembers OTHER people's PSN IDs
+# once you use RPCN online — never something to publish, even by accident
+# via a future sync.
+config/players_history.yml
+
+# Your local path to the real RPCS3 config dir — see scripts/.env.example.
+scripts/.env
+
+# Windows zone-identifier ADS metadata that sometimes leaks into WSL listings.
+*.Zone.Identifier

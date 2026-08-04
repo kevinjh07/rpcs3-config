@@ -1,0 +1,14 @@
+Video:
+  Framerate: 30
+  Width: 1280
+  Height: 720
+  AVPixelFormat: 0
+  Video Codec: ""
+  AVCodecID: 12
+  Video Bitrate: 4000000
+  Max B-Frames: 2
+  Group of Pictures Size: 30
+Audio:
+  Audio Codec: ""
+  AVCodecID: 86018
+  Audio Bitrate: 192000

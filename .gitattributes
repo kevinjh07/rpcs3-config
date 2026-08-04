@@ -1,0 +1,4 @@
+# Force LF everywhere regardless of each contributor's local git config.
+# Critical for scripts/*.sh: a CRLF shebang line breaks bash on Linux
+# ("bad interpreter") even though the rest of the script would run fine.
+* text=auto eol=lf
