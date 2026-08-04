@@ -107,10 +107,14 @@ exatamente o que mudou, em vez de restaurar o snapshot completo.
     limitações. Por isso o config deste repo assume que você está
     em **1.05 ou anterior** e deixa esses dois campos desligados — se
     você atualizar além disso, vai precisar ligá-los manualmente.
-  - Pra atualizar: clique direito no jogo no RPCS3 → **Download
-    Updates** (baixa os PKGs de patch direto dos servidores da Sony,
-    que continuam de pé pra isso) → instale os pacotes **em ordem, só
-    até a 1.05** — não instale os que vierem depois.
+  - Pra atualizar: o RPCS3 **não tem atualizador de jogo embutido**
+    (o "Patch Manager" do menu por-jogo é outra coisa — patches de
+    gameplay da comunidade, não updates oficiais). Use o
+    [Rusty-PSN](https://github.com/RainbowCookie32/rusty-psn)
+    (recomendado pela própria wiki do RPCS3): busque pelo serial
+    `NPUA81049`, baixe **só até a 1.05** (não use "Download all", que
+    pega até a 1.22), depois instale os `.pkg` em ordem via
+    **File → Install Packages/Raps** no menu principal do RPCS3.
   - Status de compatibilidade oficial do RPCS3: **Ingame** (não
     "Playable"), avaliado por último em 2024-02-24 — mais de dois anos
     desatualizado em relação à versão atual do emulador, então o
