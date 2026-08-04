@@ -80,9 +80,46 @@ exatamente o que mudou, em vez de restaurar o snapshot completo.
 - `config/custom_configs/` — overrides por jogo, ex.:
   - `config_BCUS98114.yml` — Gran Turismo 5
   - `config_BLUS30418.yml` — Red Dead Redemption
+  - `config_NPUA81049.yml` — Gran Turismo 6 (leia a nota de versão abaixo antes de jogar)
 - `config/input_configs/` — perfis de controle/volante (ex.: `LogitechG27.yml`)
 - `scripts/sync.sh` / `sync.ps1` — RPCS3 → repo (com sanitização automática)
 - `scripts/restore.sh` / `restore.ps1` — repo → RPCS3 (pede confirmação, feche o RPCS3 antes)
+
+## Jogos — notas específicas
+
+- **Gran Turismo 5 (`BCUS98114`)**: config sem ressalvas, versão de
+  disco padrão.
+- **Red Dead Redemption (`BLUS30418`)**: **não instale updates via
+  RPCS3** (Check for Updates / PKGs de patch). A wiki oficial documenta
+  perda de performance perceptível em versões atualizadas rodando
+  emulado — confirmamos que essa cópia roda na versão de disco nativa,
+  sem nenhum update aplicado.
+- **Gran Turismo 6 (`NPUA81049`)**: **atenção com a versão do jogo, não
+  só com o config.**
+  - v1.00 (a que vem no PKG, sem update nenhum) tem um crash garantido
+    ao terminar corrida.
+  - Isso foi corrigido no update **1.02**, e o ponto mais estável
+    documentado pela comunidade é a **1.05** — pare exatamente aí.
+  - A partir da **1.06 em diante** (até a 1.22, que é a mais recente
+    disponível) o jogo sofre corrupção gráfica significativa
+    (reflexos quebrados, tearing); dá pra mitigar parcialmente ativando
+    `Write Color Buffers` + `Read Color Buffers`, mas some as
+    limitações. Por isso o config deste repo assume que você está
+    em **1.05 ou anterior** e deixa esses dois campos desligados — se
+    você atualizar além disso, vai precisar ligá-los manualmente.
+  - Pra atualizar: clique direito no jogo no RPCS3 → **Download
+    Updates** (baixa os PKGs de patch direto dos servidores da Sony,
+    que continuam de pé pra isso) → instale os pacotes **em ordem, só
+    até a 1.05** — não instale os que vierem depois.
+  - Status de compatibilidade oficial do RPCS3: **Ingame** (não
+    "Playable"), avaliado por último em 2024-02-24 — mais de dois anos
+    desatualizado em relação à versão atual do emulador, então o
+    comportamento real pode ter mudado pra melhor ou pra pior desde
+    então. Existe um bug de freeze/dessincronia documentado
+    (`RSX: FP not found in buffer!` / `RSX: BRK opcode found outside
+    of a loop`) registrado em versões antigas do RPCS3 e fechado como
+    "not planned" — pode ou não persistir na sua versão. Salve com
+    frequência.
 
 ## Ajustando pro seu hardware
 
