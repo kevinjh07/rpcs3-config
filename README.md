@@ -87,8 +87,17 @@ exatamente o que mudou, em vez de restaurar o snapshot completo.
 
 ## Jogos — notas específicas
 
-- **Gran Turismo 5 (`BCUS98114`)**: config sem ressalvas, versão de
-  disco padrão.
+- **Gran Turismo 5 (`BCUS98114`)**: fica em **02.01**, não instale o
+  update **02.17**. A edição XL já vem com o conteúdo do Spec 2.0 de
+  fábrica (não é preciso atualizar pra ganhar isso), e existem dois
+  bugs abertos no GitHub do RPCS3 específicos da 02.17: artefatos
+  gráficos pretos no menu (só em placas NVIDIA com AA ligado — não
+  deve afetar GPU AMD) e crashes ao carregar/terminar corrida
+  (reportado no SKU europeu `BCES00569`, hardware AMD, então não é
+  garantidamente exclusivo de NVIDIA). Nenhum dos dois tem correção.
+  Diferente do GT6, não achei evidência forte o bastante pra apontar
+  uma versão intermediária seguramente melhor — 02.01 é a aposta mais
+  segura.
 - **Red Dead Redemption (`BLUS30418`)**: **não instale updates via
   RPCS3** (Check for Updates / PKGs de patch). A wiki oficial documenta
   perda de performance perceptível em versões atualizadas rodando
